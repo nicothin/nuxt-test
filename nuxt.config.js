@@ -5,9 +5,6 @@ module.exports = {
   router: {
     linkActiveClass: 'active-link',
     linkExactActiveClass: 'exact-active-link',
-    router: {
-      base: '/nuxt-test/'
-    },
   },
   head: {
     title: 'nuxt-test',
@@ -48,9 +45,9 @@ module.exports = {
         })
       }
       // Смена пути к генерируемым файлам, если это не разработка, а прод
-      // if (!isDev) {
-      //   config.output.publicPath = '/nuxt-test/_nuxt/'
-      // }
+      if (!isDev) {
+        config.output.publicPath = '/nuxt-test/_nuxt/'
+      }
     }
   },
 }
