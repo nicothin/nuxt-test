@@ -1,15 +1,11 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/nuxt-test/',
-  }
-} : {}
-
 module.exports = {
   css: [
     'assets/main.css'
   ],
   router: {
-    ...routerBase
+    base: '/nuxt-test/',
+    linkActiveClass: 'active-link',
+    linkExactActiveClass: 'exact-active-link',
   },
   head: {
     title: 'nuxt-test',
@@ -21,7 +17,7 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
   },
   modules: [
     '@nuxtjs/markdownit'
