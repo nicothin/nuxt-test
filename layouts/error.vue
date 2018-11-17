@@ -1,9 +1,9 @@
 <template>
   <div class="container111">
-    <h1 v-if="error.statusCode === 404">Страница не найдена 11</h1>
-    <h1 v-else>Произошла ошибка</h1>
+    <h1 v-if="error.statusCode === 404">404 Страница не найдена</h1>
+    <h1 v-else>Произошла  ошибка {{  error.statusCode  }}</h1>
     <div class="links">
-      111
+      Это печалит меня.
     </div>
   </div>
 </template>

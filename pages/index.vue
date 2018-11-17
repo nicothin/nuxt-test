@@ -1,16 +1,20 @@
-<template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        nuxt-test
-      </h1>
-      <h2 class="subtitle">
-        Потестирую ка я NUXT {{ name }}!
-      </h2>
-      <main-nav />
-    </div>
-  </section>
+<template lang="md">
+
+  <AppLogo />
+
+  # Hello World! {{ name }}
+
+  Current route is: {{ $route.path }}
+
+  <a href="google.ru">google</a>
+
+  <hr>
+
+  [fooooo](https://nicothin.pro)
+
+  <hr>
+
+  <MainNav />
 </template>
 
 <script>
@@ -21,6 +25,9 @@ export default {
   components: {
     AppLogo,
     MainNav
+  },
+  head: {
+    title: 'ЕНТО ТИТЛЕ!'
   },
   data () {
     return { name: 'World' }
@@ -35,6 +42,10 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  // a {
+  //   color: #000;
+  // }
 }
 
 .title {

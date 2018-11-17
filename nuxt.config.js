@@ -2,12 +2,13 @@ module.exports = {
   css: [
     'assets/main.css'
   ],
-  // роутер глючит в этой версии. ППЦ.
   router: {
-    linkActiveClass: 'active-link'
+    linkActiveClass: 'active-link',
+    linkExactActiveClass: 'exact-active-link',
   },
   head: {
     title: 'nuxt-test',
+    titleTemplate: '%s - Название проекта',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -17,6 +18,20 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  modules: [
+    '@nuxtjs/markdownit'
+  ],
+  // [optional] markdownit options
+  // See https://github.com/markdown-it/markdown-it
+  // markdownit: {
+  //   preset: 'default',
+  //   linkify: true,
+  //   breaks: true,
+  //   use: [
+  //     ['markdown-it-container', containerName],
+  //     'markdown-it-attrs'
+  //   ]
+  // },
   loading: { color: '#3B8070' },
   build: {
     /* Run ESLint on save */
