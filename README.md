@@ -1,24 +1,20 @@
 # nuxt-test
 
+См. [Документацию по Nuxt.js](https://github.com/nuxt/nuxt.js).
+
 ## Build Setup
 
 ``` bash
-# install dependencies
-$ npm install # Or yarn install
+# Установить зависимости
+$ npm install # Или yarn install
 
-# serve with hot reload at localhost:3000
+# Запустить сервер разработки на localhost:3000
 $ npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm start
-
-# generate static project
+# Сгенерировать в dist/ статику для gh-pages
+# См. nuxt.config.js, там вписано название репозитория (nuxt-test)
 $ npm run generate
 
-# deploy to gh=pages
+# Развернуть папку dist/ на gh-pages
 $ npm run deploy
 ```
-
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
-
