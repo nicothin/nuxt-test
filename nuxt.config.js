@@ -1,9 +1,11 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? '/nuxt-test/' : '/';
+
 module.exports = {
   css: [
     'assets/main.css'
   ],
   router: {
-    base: '/nuxt-test/',
+    base: routerBase,
     linkActiveClass: 'active-link',
     linkExactActiveClass: 'exact-active-link',
   },
@@ -45,10 +47,6 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-      // Смена пути к генерируемым файлам, если это не разработка, а прод
-      // if (!isDev) {
-      //   config.output.publicPath = '/nuxt-test/_nuxt/'
-      // }
     }
   },
 }
