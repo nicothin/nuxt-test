@@ -46,7 +46,7 @@ module.exports = {
       }
       // Смена пути к генерируемым файлам, если это не разработка, а прод
       if (!isDev) {
-        config.output.publicPath = '_nuxt/'
+        config.output.publicPath = '/nux-test/_nuxt/'
       }
     }
   },
