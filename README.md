@@ -1,7 +1,5 @@
 # nuxt-test
 
-> Потестирую ка я NUXT
-
 ## Build Setup
 
 ``` bash
@@ -17,6 +15,9 @@ $ npm start
 
 # generate static project
 $ npm run generate
+
+# deploy to gh=pages
+$ npm run deploy
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
