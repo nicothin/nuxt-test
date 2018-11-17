@@ -10,9 +10,9 @@ module.exports = {
   ],
   router: {
     // base: '/nuxt-test/',
-    ...routerBase,
     linkActiveClass: 'active-link',
     linkExactActiveClass: 'exact-active-link',
+    ...routerBase,
   },
   head: {
     title: 'nuxt-test',
