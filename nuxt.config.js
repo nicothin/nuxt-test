@@ -34,8 +34,8 @@ module.exports = {
   // },
   loading: { color: '#3B8070' },
   build: {
-    /* Run ESLint on save */
     extend (config, { isDev, isClient }) {
+      // Запуск ESLint по сохранению
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -43,6 +43,10 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
+      }
+      // Смена пути к генерируемым файлам, если это не разработка, а прод
+      if (!isDev) {
+        config.output.publicPath = '_nuxt/'
       }
     }
   },
