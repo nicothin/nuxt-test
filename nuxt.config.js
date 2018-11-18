@@ -2,7 +2,7 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? '/nuxt-test/' : '/';
 
 module.exports = {
   css: [
-    'assets/main.css'
+    { src: 'assets/main.scss', lang: 'scss' },
   ],
   router: {
     base: routerBase,
