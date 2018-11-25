@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import VueDraggableResizeable from 'vue-draggable-resizeble'
+import VueDraggableResizable from 'vue-draggable-resizable'
 
-Vue.use(VueDraggableResizeable)
+Vue.use(VueDraggableResizable)

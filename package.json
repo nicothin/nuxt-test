@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "nuxt": "^2.3.1",
-    "vue-draggable-resizable": "^1.7.3"
+    "vue-draggable-resizable": "^1.7.5"
   },
   "devDependencies": {
     "@nuxtjs/markdownit": "^1.2.2",
