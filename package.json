@@ -15,7 +15,8 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "nuxt": "^2.3.1"
+    "nuxt": "^2.3.1",
+    "vue-draggable-resizable": "^1.7.3"
   },
   "devDependencies": {
     "@nuxtjs/markdownit": "^1.2.2",
