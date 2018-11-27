@@ -12,11 +12,9 @@
 </template>
 
 <script>
-import VueDraggableResizable from 'vue-draggable-resizable'
-
 export default {
   components: {
-    VueDraggableResizable
+    VueDraggableResizable: () => import('vue-draggable-resizable')
   },
   data () {
     return {
