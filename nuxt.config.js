@@ -24,7 +24,7 @@ module.exports = {
   modules: [
     '@nuxtjs/markdownit'
   ],
-  plugins: [{ src: '@plugins/vue-draggable-resizable', ssr: false }],
+  plugins: [],
   loading: { color: '#3B8070' },
   build: {
     extend (config, { isDev, isClient }) {
